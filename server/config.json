@@ -1,0 +1,6 @@
+{
+  "brand": "Storelens",
+  "endpoint": "https://storelensapp.com/mcp",
+  "version": "1.0.0",
+  "scope": "storelens"
+}

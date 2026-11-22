@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "storelens",
+  "display_name": "Storelens",
+  "version": "1.0.0",
+  "description": "MCP connector for Storelens: detect Shopify themes and apps, spy on store catalogs, launches and live ads, and build Shopify store lead lists.",
+  "long_description": "Detect any store's Shopify theme, apps and tech stack, open store spy reports with catalog, prices, launches and best sellers, see the Meta ads a store runs, track competitors for daily price and launch alerts, and search an index of live Shopify stores by theme, app, country and niche, with owner contacts. detect_store, search_leads, get_lead_filters, list_tracked_stores and get_alerts use no allowance; get_store_report, get_store_ads and reveal_store_contacts use the plan's monthly allowance, exactly as in the dashboard.",
+  "author": {
+    "name": "Storelens"
+  },
+  "homepage": "https://storelensapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storelensapp/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}

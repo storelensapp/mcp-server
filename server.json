@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.storelensapp/mcp-server",
+  "description": "Storelens MCP: Shopify themes and apps of any store, competitor catalogs and ads, store leads.",
+  "repository": {
+    "url": "https://github.com/storelensapp/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "storelens-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://storelensapp.com/mcp"
+    }
+  ]
+}
