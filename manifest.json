@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "storelens",
+  "display_name": "Ecommerce competitor research by Storelens",
+  "version": "1.0.0",
+  "description": "Ecommerce competitor research MCP connector by Storelens: store spy reports, theme and app detector, competitor product and price tracking, best sellers and store leads.",
+  "long_description": "Ecommerce competitor research for any online store: store spy reports, a theme detector and app detector, competitor product tracking, price tracking, best sellers and store leads. Detect any store's Shopify theme, apps and tech stack, open store spy reports with catalog, prices, launches and best sellers, see the Meta ads a store runs, track competitors for daily price and launch alerts, and search an index of live Shopify stores by theme, app, country and niche, with owner contacts. Tools run on your Storelens plan exactly as the dashboard does: Starter and Pro have monthly allowances for get_store_report, get_store_ads and reveal_store_contacts, and the Free plan is a one-time allowance to try it (5 store scans, 3 store spy reports, 10 lead rows, no card).",
+  "author": {
+    "name": "Storelens"
+  },
+  "homepage": "https://storelensapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storelensapp/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}

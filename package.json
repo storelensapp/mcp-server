@@ -1,0 +1,65 @@
+{
+  "name": "storelens-mcp",
+  "version": "1.0.0",
+  "description": "Ecommerce competitor research MCP connector by Storelens: store spy reports, theme and app detector, competitor product and price tracking, best sellers and store leads.",
+  "type": "module",
+  "bin": {
+    "storelens-mcp": "server/index.js"
+  },
+  "files": [
+    "server",
+    "icon.png",
+    "manifest.json",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.mjs",
+    "bundle": "mcpb pack . storelens.mcpb"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.2"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "2.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Codex",
+  "contributors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://storelensapp.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storelensapp/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/storelensapp/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "storelens",
+    "ecommerce",
+    "competitor-research",
+    "store-spy",
+    "theme-detector",
+    "app-detector",
+    "price-tracking",
+    "shopify",
+    "lead-generation"
+  ],
+  "mcpName": "io.github.storelensapp/mcp-server",
+  "overrides": {
+    "tmp": "^0.2.6"
+  }
+}

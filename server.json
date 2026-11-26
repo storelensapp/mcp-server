@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.storelensapp/mcp-server",
+  "title": "Ecommerce competitor research by Storelens",
+  "description": "Ecommerce competitor research: store spy, theme and app detector, price tracking, store leads.",
+  "repository": {
+    "url": "https://github.com/storelensapp/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "storelens-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://storelensapp.com/mcp"
+    }
+  ]
+}
